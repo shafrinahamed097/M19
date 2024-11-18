@@ -72,4 +72,24 @@ class DemoController extends Controller
         return $products;
 
     }
+
+    function WhereClauses(Request $request){
+        // $products = Product::where('price', '=', '2000')->get();
+        // $products = Product::where('price', '!=', '2000')->get();
+        // $products = Product::where('title', 'LIKE', '%NEW%')->get();
+        // $products = Product::where('title', 'NOT LIKE', '%shoe%')->get();
+        // $products = Product::whereBetween('price', [1,400])->get();
+        // $products = Product::whereNotBetween('price', [1,400])->get();
+        // $products = Product::whereIn('price', [1,120])->get();
+        // $products = Product::whereNotIn('price', [1,120])->get();
+        // $products = Product::whereNull('price')->get();
+        // $products = Product::whereNotNull('price')->get();
+        // $products = Product::whereDate('created_at', '2023-02-19')->get();
+        // $products = Product::whereMonth('created_at', '02')->get();
+        // $products = Product::whereYear('created_at', '2023')->get();
+        // $products = Product::whereTime('created_at', '20:08:12')->get();
+        $products = Product::whereColumn('updated_at','>', 'created_at')->get();
+        return $products;
+
+    }
 }

@@ -27,3 +27,6 @@
 * Select Clause
    - The select() method allows you to specify the columns
    - To return distinct results use the distinct() method
+
+* Basic Where Clauses
+   - The where() method allows you to filter the results.

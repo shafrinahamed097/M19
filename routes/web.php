@@ -28,3 +28,4 @@ Route::get('/RetrievingSingle', [DemoController::class, 'RetrievingSingle']);
 Route::get('/RetrievingPluck', [DemoController::class, 'RetrievingPluck']);
 Route::get('/Aggregate', [DemoController::class, 'Aggregate']);
 Route::get('/SelectClause', [DemoController::class, 'SelectClause']);
+Route::get('/WhereClauses', [DemoController::class, 'WhereClauses']);
