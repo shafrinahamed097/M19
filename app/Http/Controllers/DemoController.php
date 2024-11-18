@@ -50,4 +50,9 @@ class DemoController extends Controller
         $brands = Brand::find(6);
         return $brands;
     }
+
+    function RetrievingPluck(Request $request){
+        $product = Product::pluck('price', 'title');
+        return $product;
+    }
 }

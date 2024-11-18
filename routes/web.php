@@ -25,3 +25,4 @@ Route::get('/brand-delete/{id}', [DemoController::class, 'BrandDelete']);
 Route::get('/product-price', [DemoController::class, 'IncrementDecrement']);
 Route::get('/RetrievingAll', [DemoController::class, 'RetrievingAll']);
 Route::get('/RetrievingSingle', [DemoController::class, 'RetrievingSingle']);
+Route::get('/RetrievingPluck', [DemoController::class, 'RetrievingPluck']);
