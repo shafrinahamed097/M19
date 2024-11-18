@@ -23,3 +23,5 @@ Route::post('/brand-update/{id}', [DemoController::class, 'BrandUpdate']);
 Route::post('/update-or-create/{brandName}', [DemoController::class, 'UpdateOrCreate']);
 Route::get('/brand-delete/{id}', [DemoController::class, 'BrandDelete']);
 Route::get('/product-price', [DemoController::class, 'IncrementDecrement']);
+Route::get('/RetrievingAll', [DemoController::class, 'RetrievingAll']);
+Route::get('/RetrievingSingle', [DemoController::class, 'RetrievingSingle']);

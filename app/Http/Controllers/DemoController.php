@@ -38,4 +38,16 @@ class DemoController extends Controller
         return $products;
 
     }
+
+    function RetrievingAll(Request $request){
+        $brands = Brand::all();
+        return $brands;
+
+    }
+
+    function RetrievingSingle(Request $request){
+        // $brands = Brand::first();
+        $brands = Brand::find(6);
+        return $brands;
+    }
 }

@@ -15,3 +15,7 @@
 
 * Increment & Decrement:
    - Laravel provides convenient methods for incrementing or decrementing the value of a given column.
+
+* Retrieving: 
+   - Use the get() method to execute
+   - Use the all() method to execute
