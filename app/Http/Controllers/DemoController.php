@@ -105,4 +105,15 @@ class DemoController extends Controller
         return $products;
 
     }
+
+    function Paginate(Request  $request){
+        // $products = Product::simplePaginate(2);
+        $products = Product::paginate(
+            $perPage=10,
+            $columns = ['*'],
+            $pageName = 'ItemNumber'
+        );
+        return $products;
+
+    }
 }

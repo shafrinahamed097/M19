@@ -30,3 +30,10 @@
 
 * Basic Where Clauses
    - The where() method allows you to filter the results.
+
+* Paginate
+   - Display simple "Next" and "Previous" links in your application's UI, use the 
+   simplePaginate method to perform a single, efficient query.
+
+   - The paginate method counts the total number of records matched by the query 
+   before retrieving the records from the database.
