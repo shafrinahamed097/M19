@@ -92,4 +92,17 @@ class DemoController extends Controller
         return $products;
 
     }
+
+    function OrderingGroupingLimit(Request $request){
+        // $products = Product::orderBy('price', 'desc')->get();
+        // $products = Product::orderBy('price', 'asc')->get();
+
+        // $products = Product::inRandomOrder()->get();
+        // $products = Product::latest()->get();
+        // $products = Product::oldest()->get();
+        // $products = Product::groupBy('price')->having('price', '>', 3000)->get();
+        $products = Product::skip(10)->take(1)->get();
+        return $products;
+
+    }
 }
