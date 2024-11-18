@@ -12,3 +12,6 @@
 
 * Delete Using Model
    - The delete() method is Laravel's Eloquent ORM is used delete a record from the DB.
+
+* Increment & Decrement:
+   - Laravel provides convenient methods for incrementing or decrementing the value of a given column.

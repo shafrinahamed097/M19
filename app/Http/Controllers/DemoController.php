@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Brand;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class DemoController extends Controller
@@ -28,6 +29,13 @@ class DemoController extends Controller
 
     function BrandDelete(Request $request){
         return Brand::where('id', '=', $request->id)->delete();
+
+    }
+
+    function IncrementDecrement(Request $request){
+        // $products = Product::where('id',1)->increment('price',100);
+        $products = Product::where('id',1)->decrement('price',100);
+        return $products;
 
     }
 }
