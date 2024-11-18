@@ -18,4 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/brand', [DemoController::class, 'BrandAction']);
+Route::post('/brand-insert', [DemoController::class, 'BrandInsert']);
+Route::post('/brand-update/{id}', [DemoController::class, 'BrandUpdate']);

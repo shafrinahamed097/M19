@@ -6,8 +6,14 @@ use Illuminate\Http\Request;
 
 class DemoController extends Controller
 {
-    function BrandAction(Request $request){
+    function BrandInsert(Request $request){
       $brand =  Brand::create($request->input());
       return $brand;
+    }
+
+    function BrandUpdate(Request $request){
+        $brand = Brand::where('id', $request->id)
+        ->update($request->input());
+        return $brand;
     }
 }
