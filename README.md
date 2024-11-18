@@ -5,3 +5,7 @@
 * Update Using Model:
    - The update method expects an array of column and value pairs representing the columns that should be updated
    - In Laravel, the fillable property is used to define which fields in a model can be mass assigned.
+
+*Update or Create Using Model'
+   - The updateOrCreate() method in Laravel is used to update an existing record in the BD if
+     it exists, or create a new record if it doesn't exist
