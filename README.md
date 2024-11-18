@@ -8,4 +8,7 @@
 
 *Update or Create Using Model'
    - The updateOrCreate() method in Laravel is used to update an existing record in the BD if
-     it exists, or create a new record if it doesn't exist
+     it exists, or create a new record if it doesn't exist.
+
+* Delete Using Model
+   - The delete() method is Laravel's Eloquent ORM is used delete a record from the DB.

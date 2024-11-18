@@ -17,11 +17,17 @@ class DemoController extends Controller
         return $brand;
     }
 
+    
     function UpdateOrCreate(Request $request){
         $brand = Brand::updateOrCreate(
             ['brandName'=>$request->brandName],
             $request->input()
         );
         return $brand;
+    }
+
+    function BrandDelete(Request $request){
+        return Brand::where('id', '=', $request->id)->delete();
+
     }
 }

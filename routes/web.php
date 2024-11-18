@@ -21,3 +21,4 @@ Route::get('/', function () {
 Route::post('/brand-insert', [DemoController::class, 'BrandInsert']);
 Route::post('/brand-update/{id}', [DemoController::class, 'BrandUpdate']);
 Route::post('/update-or-create/{brandName}', [DemoController::class, 'UpdateOrCreate']);
+Route::get('/brand-delete/{id}', [DemoController::class, 'BrandDelete']);
