@@ -55,4 +55,14 @@ class DemoController extends Controller
         $product = Product::pluck('price', 'title');
         return $product;
     }
+
+    function Aggregate(Request $request){
+        // $products = Product::sum('price');
+        // $products = Product::avg('price');
+        // $products = Product::count('price');
+        // $products = Product::max('price');
+        $products = Product::min('price');
+        return $products;
+
+    }
 }

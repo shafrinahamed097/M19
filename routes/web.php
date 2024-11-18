@@ -26,3 +26,4 @@ Route::get('/product-price', [DemoController::class, 'IncrementDecrement']);
 Route::get('/RetrievingAll', [DemoController::class, 'RetrievingAll']);
 Route::get('/RetrievingSingle', [DemoController::class, 'RetrievingSingle']);
 Route::get('/RetrievingPluck', [DemoController::class, 'RetrievingPluck']);
+Route::get('/Aggregate', [DemoController::class, 'Aggregate']);

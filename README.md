@@ -19,3 +19,7 @@
 * Retrieving: 
    - Use the get() method to execute
    - Use the all() method to execute
+
+* Aggregates
+   - Methods for retrieving aggregate values like count, max, min, avg, and sum.
+   - Call any of these methods after constructing query.
