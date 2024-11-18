@@ -23,3 +23,7 @@
 * Aggregates
    - Methods for retrieving aggregate values like count, max, min, avg, and sum.
    - Call any of these methods after constructing query.
+
+* Select Clause
+   - The select() method allows you to specify the columns
+   - To return distinct results use the distinct() method

@@ -65,4 +65,11 @@ class DemoController extends Controller
         return $products;
 
     }
+
+    function SelectClause(Request $request){
+        // $products = Product::select('title', 'price','discount','stock')->get();
+        $products = Product::select('title')->distinct()->get();
+        return $products;
+
+    }
 }
